@@ -1,27 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Jacques+Francois+Shadow&display=swap");
+
 .App {
   display: flex;
-  flex-direction: column;
 }
 
-.App-logo {
+.Logo {
   pointer-events: none;
   width: 3vw;
   height: auto;
 }
 
-                                                          /* @media (prefers-reduced-motion: no-preference) {
-                                                            .App-logo {
-                                                              animation: App-logo-spin infinite 10s linear;
-                                                            }
-                                                          } */
+.Logo-title {
+  width: 4vw;
+  height: auto;
+}
 
-.App-body {
+@media (prefers-reduced-motion: no-preference) {
+  .Logo-rotate {
+    animation: Logo-Move infinite 5s linear;
+  }
+}
+
+.App-body{
   display: block;
-  min-height: 93.6vh;
+  min-height: 90vh; /*1vh*/
   width: 100vw;
-  z-index: 0;
-  margin-top: 100vh;
-  background-color: #0a1220;
+  z-index: 1;
+  margin-top: 88vh;
+  background-image: linear-gradient(#0059ff00, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #13233d, #0a1220);
+  opacity: 0.9;
+}
+
+Footer {
+  display: block;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  background-image: linear-gradient(#060b13, #152138);
+  color: white;
+  padding: 1.2vh;
+}
+
+.App-body div {
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 0;
+  font-family:'Fascinate Inline', cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .App-header {
@@ -30,20 +59,27 @@
   padding: 1.2vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-color: #0a1220;
+  background-image: linear-gradient(#2f78ff63, #0041bb54, #00000000); /*111d32*/
   position: fixed;
   width:100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 .Sand {
   display: block;
   width: 100vw;
-  z-index: -1;
+  z-index: 0;
   position: fixed;
+  background-image: url("./sand.jpg");
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
+.Arrow {
+  color: white;
+  position: absolute;
+}
+
+@keyframes Logo-Move {
   from {
     transform: rotate(0deg);
   }
