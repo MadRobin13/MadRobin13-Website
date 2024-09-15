@@ -17,7 +17,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Logo-rotate {
-    animation: Logo-Move infinite 5s linear;
+    animation: Logo-Move infinite 2s linear;
   }
 }
 
@@ -26,9 +26,48 @@
   min-height: 90vh; /*1vh*/
   width: 100vw;
   z-index: 1;
-  margin-top: 88vh;
+  margin-top: 86vh;
   background-image: linear-gradient(#0059ff00, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #13233d, #0a1220);
   opacity: 0.9;
+}
+
+.App-body p{
+  color: white;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 2vh;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  padding-left: 12vw;
+  a {
+    color: white;
+    /* text-decoration: none; */
+    font-weight: 800;
+  }
+}
+
+.App-body div #links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 2vh;
+  img {
+    width: 1.5vw;
+    height: auto;
+  }
+}
+
+#first-sentence {
+  margin-top: 10vh;
+  font-weight: 900;
+  text-align: center;
+  padding-left: 0;
+}
+
+#disclaimer {
+  font-size: 1vw;
+  padding-left: 25vw;
 }
 
 Footer {
@@ -42,15 +81,22 @@ Footer {
   padding: 1.2vh;
 }
 
-.App-body div {
+#title{
   padding: 0;
+  padding-top: 1vh;
   color: white;
-  text-align: center;
-  font-size: 1.5vw;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  top: 10vh;
+  width: fit-content;
+  position: absolute;
+  font-size: 3.5vw;
   margin-top: 0;
   font-family:'Fascinate Inline', cursive;
   font-weight: 400;
   font-style: normal;
+  z-index: 1;
 }
 
 .App-header {
@@ -75,8 +121,33 @@ Footer {
 }
 
 .Arrow {
+  display:block;
   color: white;
+  font-size: 10vw;
   position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  top: 10vh;
+  width: fit-content;
+  /* margin: auto;Z */
+  z-index: 1;
+  rotate: 90deg;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:900;
+  animation: Arrow-Move 2s infinite;
+}
+
+@keyframes Arrow-Move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes Logo-Move {
