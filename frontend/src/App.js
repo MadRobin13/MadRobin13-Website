@@ -33,7 +33,9 @@ function App() {
 
       <div id="links">
         <a href={"https://github.com/MadRobin13"}><img src={require("./github.png")} alt="github logo"/></a>
-        <a></a>
+        <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")}/></a>
+        <a><img src={require("./linkedin-app-white-icon.png")}/></a>
+        <a href={"https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"}><img/></a>
         <a></a>
       </div>
       </body>
