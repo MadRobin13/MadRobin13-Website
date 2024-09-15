@@ -28,19 +28,19 @@ function App() {
           <p>
           - I enjoy making projects in my free time
           </p>
-          <p id="disclaimer">Please see my github and resume for more of my projects and experience</p>
         </div>
-
+        <div id="certification"><a href={"https://www.credly.com/badges/7dc8a2c8-3deb-4af7-b55c-ce09bcd9eb37/public_url"}><img src={require("./ai-and-ml-with-python-skill-circuit-stream-in-partn_small.png")}/></a></div>
+        <p id="disclaimer">Please see my github and resume for more of my projects and experience</p>
       <div id="links">
         <a href={"https://github.com/MadRobin13"}><img src={require("./github.png")} alt="github logo"/></a>
         <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")}/></a>
         <a><img src={require("./linkedin-app-white-icon.png")}/></a>
         <a href={"https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"}><img/></a>
-        <a></a>
+        <a>printables logo</a>
       </div>
       </body>
 
-      <footer className="App-footer"> </footer>
+      {/* <footer className="App-footer"> </footer> */}
     </div>
   );
 }
