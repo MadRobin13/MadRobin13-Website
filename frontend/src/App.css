@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Jacques+Francois+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 .App {
   display: flex;
@@ -27,7 +28,7 @@
   width: 100vw;
   z-index: 1;
   margin-top: 86vh;
-  background-image: linear-gradient(#0059ff00, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #1b3057, #13233d, #0a1220);
+  background-image: linear-gradient(#0059ff00, #001c508c, #00102b);
   opacity: 0.9;
 }
 
@@ -57,16 +58,22 @@
   width: fit-content;
 }
 
-.App-body #links{
+#links{
+  z-index: 1;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  top: 30vh;
+  width: fit-content;
+  position: absolute;
   margin-top: 20vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   padding: 0 1vw;
-  bottom: 2vh;
+  /* bottom: 2vh; */
   img {
-    width: 1.5vw;
+    width: 3.5vw;
     height: auto;
     padding: 0 1vw;
   }
@@ -96,7 +103,7 @@ Footer {
   padding: 1.2vh;
 }
 
-#title{
+.title-settings{
   padding: 0;
   padding-top: 1vh;
   color: white;
@@ -112,15 +119,41 @@ Footer {
   font-weight: 400;
   font-style: normal;
   z-index: 1;
+  animation: Move-Title 2s;
+}
+
+.about-me {
+  padding-top: 1vh;
+  color: white;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  position: absolute;
+  font-size: 2vw;
+  margin-top: 0;
+  font-family:'Concert One', cursive;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1;
+}
+/* #line-1 {
+  margin-top:17vh;
+  animation: Move-line-left 3s;
+} */
+
+#line-2 {
+  margin-top:18vh;
+  animation: Move-line-right 3s;
 }
 
 .App-header {
-  min-height: 9vh;
+  min-height: 6vh;
   display: block;
   padding: 1.2vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: linear-gradient(#2f78ff63, #0041bb54, #00000000); /*111d32*/
+  background-image: linear-gradient(#004fe363, #00000000); /*111d32*/
   position: fixed;
   width:100vw;
   z-index: 2;
@@ -131,19 +164,19 @@ Footer {
   width: 100vw;
   z-index: 0;
   position: fixed;
-  background-image: url("./sand.jpg");
+  /* background-image: linear-gradient(#f5e6ca, #f5e6ca); */
   background-size: cover;
 }
 
 .Arrow {
   display:block;
   color: white;
-  font-size: 10vw;
+  font-size: 5vw;
   position: absolute;
   left: 0; 
   right: 0; 
   margin-inline: auto; 
-  top: 10vh;
+  top: 65vh;
   width: fit-content;
   /* margin: auto;Z */
   z-index: 1;
@@ -158,18 +191,54 @@ Footer {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(10vh);
+    transform: translateX(3vh);
   }
   100% {
     transform: translateX(0);
   }
 }
 
+@keyframes Move-Title {
+  0% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes Move-line-left {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes Move-line-right {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
 @keyframes Logo-Move {
-  from {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
   }
 }
