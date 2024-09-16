@@ -9,7 +9,7 @@ function App() {
 
       <h1 className="title-settings">Hi, I'm Abhimanyu Chaudhary! <img src={require("./madrobin_logo_mrk5.png")} className="Logo Logo-rotate Logo-title" alt="logo"/></h1>
       <h2 className='title-settings about-me' id="line-2">I'm a full stack developer with a lot of experience in programming and hardware.</h2>
-
+      <img src={require("./small_shapes/small_round_square.png")} alt="circle" className='Small-shape'></img>
       <div id="links">
         <a href={"https://github.com/MadRobin13"}><img src={require("./github.png")} alt="github logo"/></a>
         <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")} alt="email me here button"/></a>
@@ -18,7 +18,7 @@ function App() {
         <a href={"https://www.printables.com/@mando13_1132886"}><img src={require("./printables_icon_white_v3.png")} id="printables" alt="printables logo"/></a>
       </div>
 
-      <p className='Arrow'> {'>'}</p>
+      <p className='Arrow'>{'>'}</p>
       <img src={require("./blue_minimal.png")} alt="sand" className="Sand"/>
 
       <body className="App-body">
@@ -40,8 +40,13 @@ function App() {
       </body>
 
       {/* <footer className="App-footer"> </footer> */}
+      <script>
+        
+      </script>
     </div>
   );
 }
+
+
 
 export default App;

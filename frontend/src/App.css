@@ -18,7 +18,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Logo-rotate {
-    animation: Logo-Move infinite 2s linear;
+    animation: Logo-Move 2s ;
   }
 }
 
@@ -46,6 +46,23 @@
     /* text-decoration: none; */
     font-weight: 800;
   }
+}
+
+.Small-shape {
+  display: block;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  background-image: linear-gradient(#f5e6ca, #f5e6ca);
+  background-size: cover;
+  height: 10vh;
+  animation: Move-square 2s;
+  animation: Rotate-square 10s infinite;
 }
 
 #certification {
@@ -236,18 +253,36 @@ Footer {
 
 @keyframes Logo-Move {
   0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes Move-square {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes Rotate-square {
+  0% {
     transform: rotate(45deg);
   }
   25% {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
   }
   75% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
   }
 }
