@@ -71,7 +71,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 0 1vw;
-  /* bottom: 2vh; */
+  animation: Move-links 2s;
   img {
     width: 3.5vw;
     height: auto;
@@ -222,6 +222,15 @@ Footer {
   }
   100% {
     transform: translateX(0vw);
+  }
+}
+
+@keyframes Move-links {
+  0% {
+    transform: translateY(5vh);
+  }
+  100% {
+    transform: translateY(0vh);
   }
 }
 
