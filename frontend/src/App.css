@@ -3,12 +3,17 @@
 
 .App {
   display: flex;
+  /* overflow-y: scroll; */
+  scrollbar-color: rgb(255, 255, 255) #ffffff;
+  background-color: #130c31;
+  scrollbar-color: pink lightblue;
 }
 
 .Logo {
   pointer-events: none;
   width: 3vw;
   height: auto;
+  animation: Logo-Move 2s;
 }
 
 .Logo-title {
@@ -16,15 +21,9 @@
   height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .Logo-rotate {
-    animation: Logo-Move 2s ;
-  }
-}
-
 .App-body{
   display: block;
-  min-height: 90vh; /*1vh*/
+  min-height: 200vh; /*1vh*/
   width: 100vw;
   z-index: 1;
   margin-top: 86vh;
@@ -61,7 +60,6 @@
   background-image: linear-gradient(#f5e6ca, #f5e6ca);
   background-size: cover;
   height: 10vh;
-  animation: Move-square 2s;
   animation: Rotate-square 10s infinite;
 }
 
@@ -76,21 +74,16 @@
 }
 
 #links{
-  z-index: 1;
-  left: 0; 
-  right: 0; 
-  margin-inline: auto; 
-  top: 30vh;
-  width: fit-content;
-  position: absolute;
-  margin-top: 20vh;
+  position: relative;
   display: flex;
+  margin-top: 10vh;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0 1vw;
+  margin: 2vh auto;
   animation: Move-links 2s;
   img {
-    width: 3.5vw;
+    width: 1.5vw;
     height: auto;
     padding: 0 1vw;
   }
@@ -109,13 +102,101 @@
 
 }
 
+#triangle {
+  width: 60vw;
+  height: auto;
+  display: block;
+  position: absolute;
+  /* left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content; */
+  margin-top: 15vh;
+  right: 7vw;
+  z-index: 1;
+  animation: Move-traingle 2s;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10vh;
+  color: white;
+  h2 {
+    font-size: 2vw;
+    font-weight: 900;
+    padding: 1vh;
+    text-align: center;
+    font-family: "Fascinate inline", cursive;
+  }
+  h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+    /* padding: 1vh; */
+    text-align: center;
+    font-family: "Fascinate inline", cursive;
+  }
+  img {
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.project {
+  background-color: #80f9f9e2;
+  border-radius: 10px;
+  box-shadow: #00102b 0px 0px 50px;
+  display: flex;
+  margin: 0;
+  position:relative;
+  right: 0; 
+  margin-inline: auto; 
+  /* width: fit-content; */
+  padding: 1vh;
+  margin-top: 20px;
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  padding-left: 1vw;
+  a {
+    color: white;
+    font-weight: 800;
+  }
+}
+
+#project-1 {
+  animation: Move-line-left 3s;
+  left: 50px; 
+
+}
+#project-2 {
+  animation: Move-line-right 3s;
+  background-color: #5c9bffde;
+  left: -50px; 
+
+}
+#project-3 {
+  animation: Move-line-left 3s;
+  left: 50px; 
+
+}
+#project-4 {
+  animation: Move-line-right 3s;
+  background-color: #5c9bffde;
+  left: -50px; 
+
+}
+
 Footer {
   display: block;
   width: 100vw;
+  height: 5vh;
   z-index: 2;
   position: fixed;
   bottom: 0;
-  background-image: linear-gradient(#060b13, #152138);
+  background-image: linear-gradient(#0059ff00, #002663);
   color: white;
   padding: 1.2vh;
 }
@@ -124,14 +205,14 @@ Footer {
   padding: 0;
   padding-top: 1vh;
   color: white;
-  left: 0; 
+  left: -44vw; 
   right: 0; 
   margin-inline: auto; 
-  top: 10vh;
+  top: clamp(50px, 13vh, 200px);
   width: fit-content;
   position: absolute;
-  font-size: 3.5vw;
-  margin-top: 0;
+  font-size: max(10px, 5rem);
+  margin-top: 11vh;
   font-family:'Fascinate Inline', cursive;
   font-weight: 400;
   font-style: normal;
@@ -139,16 +220,27 @@ Footer {
   animation: Move-Title 2s;
 }
 
+#name {
+  top: clamp(150px, 18vh, 250px);
+  left: -10vw;
+  font-size: max(25px, 3.5vw);
+}
+
+.hi {
+  font-size: 3vw;
+  font-family:'Concert One', cursive;
+  font-size: min(15rem, 50px);
+
+}
+
 .about-me {
-  padding-top: 1vh;
+  padding-top: clamp(5px, 0.2vh, 2vh);
   color: white;
-  left: 0; 
   right: 0; 
   margin-inline: auto; 
   width: fit-content;
   position: absolute;
   font-size: 2vw;
-  margin-top: 0;
   font-family:'Concert One', cursive;
   font-weight: 400;
   font-style: normal;
@@ -160,8 +252,15 @@ Footer {
 } */
 
 #line-2 {
-  margin-top:18vh;
+  margin-top:29vh;
   animation: Move-line-right 3s;
+  left: -14vw; 
+}
+
+#line-3 {
+  margin-top:34vh;
+  animation: Move-line-right 3s;
+  left: -8vw; 
 }
 
 .App-header {
@@ -180,7 +279,8 @@ Footer {
   display: block;
   width: 100vw;
   z-index: 0;
-  position: fixed;
+  position: absolute;
+  overflow-x: hidden;
   /* background-image: linear-gradient(#f5e6ca, #f5e6ca); */
   background-size: cover;
 }
@@ -188,12 +288,12 @@ Footer {
 .Arrow {
   display:block;
   color: white;
-  font-size: 5vw;
+  font-size: 5rem;
   position: absolute;
   left: 0; 
   right: 0; 
   margin-inline: auto; 
-  top: 65vh;
+  top: 78vh;
   width: fit-content;
   /* margin: auto;Z */
   z-index: 1;
@@ -266,6 +366,17 @@ Footer {
   }
   100% {
     transform: translateY(0vh);
+  }
+}
+
+@keyframes Move-traingle {
+  0% {
+    transform: translateX(100vh);
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: translateX(0vh);
+    transform: rotate(0deg);
   }
 }
 
