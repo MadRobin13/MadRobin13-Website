@@ -6,7 +6,10 @@
   /* overflow-y: scroll; */
   scrollbar-color: rgb(255, 255, 255) #ffffff;
   background-color: #130c31;
-  scrollbar-color: pink lightblue;
+  /* scrollbar-color: pink lightblue; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .Logo {
@@ -29,6 +32,7 @@
   margin-top: 86vh;
   background-image: linear-gradient(#0059ff00, #001c508c, #00102b);
   opacity: 0.9;
+  overflow-x: hidden;
 }
 
 .App-body p{
@@ -79,7 +83,7 @@
   margin-top: 10vh;
   flex-direction: row;
   justify-content: center;
-  padding: 0 1vw;
+  /* padding: 0 1vw; */
   margin: 2vh auto;
   animation: Move-links 2s;
   img {
@@ -105,7 +109,6 @@
 #triangle {
   width: 60vw;
   height: auto;
-  display: block;
   position: absolute;
   /* left: 0; 
   right: 0; 
@@ -114,7 +117,7 @@
   margin-top: 15vh;
   right: 7vw;
   z-index: 1;
-  animation: Move-traingle 2s;
+  animation: Move-traingle 2s ease-in-out;
 }
 
 #projects {
@@ -147,6 +150,7 @@
 .project {
   background-color: #80f9f9e2;
   border-radius: 10px;
+  min-width: 200px;
   box-shadow: #00102b 0px 0px 50px;
   display: flex;
   margin: 0;
@@ -166,11 +170,6 @@
   }
 }
 
-#project-1 {
-  animation: Move-line-left 3s;
-  left: 50px; 
-
-}
 #project-2 {
   animation: Move-line-right 3s;
   background-color: #5c9bffde;
@@ -245,6 +244,7 @@ Footer {
   font-weight: 400;
   font-style: normal;
   z-index: 1;
+  overflow-x: hidden;
 }
 /* #line-1 {
   margin-top:17vh;
@@ -288,12 +288,12 @@ Footer {
 .Arrow {
   display:block;
   color: white;
-  font-size: 5rem;
+  font-size: min(5rem, 50px);
   position: absolute;
   left: 0; 
   right: 0; 
   margin-inline: auto; 
-  top: 78vh;
+  top: max(76vh, 500px);
   width: fit-content;
   /* margin: auto;Z */
   z-index: 1;
@@ -326,7 +326,7 @@ Footer {
 
 @keyframes Move-line-left {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(-50vw);
   }
   100% {
     transform: translateX(0vw);
@@ -335,7 +335,7 @@ Footer {
 
 @keyframes Move-line-right {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(30vw);
   }
   100% {
     transform: translateX(0vw);
@@ -371,11 +371,10 @@ Footer {
 
 @keyframes Move-traingle {
   0% {
-    transform: translateX(100vh);
-    transform: rotate(90deg);
+    transform: rotate(180deg) ;
+
   }
   100% {
-    transform: translateX(0vh);
     transform: rotate(0deg);
   }
 }
