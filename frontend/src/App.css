@@ -88,7 +88,7 @@
     height: auto;
     padding: 5px;
     border: white 1px solid;
-    border-radius: 3px;
+    border-radius: 10px;
     transition: width 0.5s;
     /* transition: border 1s; */
   }
@@ -168,7 +168,9 @@
   min-width: 200px;
   box-shadow: #00102b 0px 0px 50px;
   display: flex;
-  margin: 0;
+  flex-direction: column;
+  justify-self: space-between;
+  margin: 10px;
   position:relative;
   right: 0; 
   margin-inline: auto; 
@@ -185,10 +187,30 @@
   }
 }
 
+#project-1 {
+  animation: Move-line-left 3s;
+  transition: transform 1s;
+}
+
+#project-2 {
+  animation: Move-line-right 3s;
+  background-color: #5c9bffde;
+
+}
+#project-3 {
+  animation: Move-line-left 3s;
+}
+
+#project-4 {
+  animation: Move-line-right 3s;
+  background-color: #5c9bffde;
+}
+
 #project-1:hover {
   background-color: #00a7a7ea;
   box-shadow: #00102b 0px 0px 50px;
-  filter: blur(2px);
+  filter: blur(3px);
+  transform: scale(1.1);
 }
 
 #project-2:hover {
@@ -207,31 +229,6 @@
   background-color: #3e6fbdde;
   box-shadow: #00102b 0px 0px 50px;
   filter: blur(0.7px);
-}
-
-#project-1 {
-  animation: Move-line-left 3s;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * 1s);
-  left: 50px; 
-}
-
-#project-2 {
-  animation: Move-line-right 3s;
-  background-color: #5c9bffde;
-  left: -50px; 
-
-}
-#project-3 {
-  animation: Move-line-left 3s;
-  left: 50px; 
-}
-
-#project-4 {
-  animation: Move-line-right 3s;
-  background-color: #5c9bffde;
-  left: -50px; 
-
 }
 
 Footer {
