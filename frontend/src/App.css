@@ -254,13 +254,13 @@ Footer {
 #line-2 {
   margin-top:29vh;
   animation: Move-line-right 3s;
-  left: -14vw; 
+  left: 6vw; 
 }
 
 #line-3 {
   margin-top:34vh;
   animation: Move-line-right 3s;
-  left: -8vw; 
+  left: 16vw; 
 }
 
 .App-header {
@@ -326,10 +326,12 @@ Footer {
 
 @keyframes Move-line-left {
   0% {
-    transform: translateX(-50vw);
+    transform: translateX(-100vw);
+    overflow: none;
   }
   100% {
     transform: translateX(0vw);
+    overflow: none;
   }
 }
 

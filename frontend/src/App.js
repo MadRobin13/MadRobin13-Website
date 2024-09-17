@@ -11,8 +11,8 @@ function App() {
       <div id="title-stuff">
         <h1 className="title-settings hi">Hi I'm</h1>
         <h1 className="title-settings" id="name">Abhimanyu Chaudhary.</h1>
-        <h2 className='title-settings about-me' id="line-2">I'm a full stack developer with a lot </h2>
-        <h2 className='title-settings about-me' id="line-3"> of experience in programming and hardware.</h2>
+        <h2 className='title-settings about-me' id="line-2">I'm a full stack developer and </h2>
+        <h2 className='title-settings about-me' id="line-3"> I love creating robots!</h2>
       </div>
 
       <p className='Arrow'>{'>'}</p>
