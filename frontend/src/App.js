@@ -22,10 +22,10 @@ function App() {
         <div id="projects">
           <h2>Projects</h2>
           <div className="project" id="project-1">
-          <img src={require("./chattr_logo_v5.png")} alt="chattr logo"/>
             <div>
-              <h3>Project 1</h3>
-              <p>Project 1 Description</p>
+              <h3><img src={require("./chattr_logo_v5.png")} alt="chattr logo"/></h3>
+              <p>A Web Based Chat Application written </p>
+              <p>using Go and React.js</p>
             </div>
           </div>
           <div className="project" id="project-2">
@@ -49,7 +49,7 @@ function App() {
           <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")} alt="email me here button"/></a>
           <a><img src={require("./linkedin-app-white-icon.png")} alt="linkedin"/></a>
           <a href={"https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"}><img src={require("./document-512.png")} alt="resume"/></a>
-          <a href={"https://www.printables.com/@mando13_1132886"}><img src={require("./printables_icon_white_v3.png")} id="printables" alt="printables logo"/></a>
+          <a href={"https://www.printables.com/@mando13_1132886"}><img src={require("./printables_icon_white_v5.png")} id="printables" alt="printables logo"/></a>
         </div>
       </footer>
       <script>
