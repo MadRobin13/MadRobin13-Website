@@ -21,6 +21,7 @@ function App() {
       <body className="App-body">
         <div id="projects">
           <h2>Projects</h2>
+          <div className="project-group"></div>
           <div className="project" id="project-1">
             <div>
               <h3><img src={require("./chattr_logo_v5.png")} alt="chattr logo"/></h3>

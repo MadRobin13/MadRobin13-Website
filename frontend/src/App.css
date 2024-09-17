@@ -163,7 +163,8 @@
 }
 
 .project {
-  background-color: #80f9f9e2;
+  background-color: #001c508c;
+  border: #6b9fff8c 5px solid;
   border-radius: 10px;
   min-width: 200px;
   box-shadow: #00102b 0px 0px 50px;
@@ -194,41 +195,44 @@
 
 #project-2 {
   animation: Move-line-right 3s;
-  background-color: #5c9bffde;
-
+  transition: transform 1s;
 }
 #project-3 {
   animation: Move-line-left 3s;
+  transition: transform 1s;
 }
 
 #project-4 {
   animation: Move-line-right 3s;
-  background-color: #5c9bffde;
+  transition: transform 1s;
 }
 
 #project-1:hover {
-  background-color: #00a7a7ea;
+  background-color: #5c9bffde;
   box-shadow: #00102b 0px 0px 50px;
   filter: blur(3px);
   transform: scale(1.1);
 }
 
 #project-2:hover {
-  background-color: #3e6fbdde;
+  background-color: #5c9bffde;
   box-shadow: #00102b 0px 0px 50px;
-  filter: blur(0.7px);
+  filter: blur(3px);
+  transform: scale(1.1);
 }
 
 #project-3:hover {
-  background-color: #00a7a7ea;
+  background-color: #5c9bffde;
   box-shadow: #00102b 0px 0px 50px;
-  filter: blur(0.7px);
+  filter: blur(3px);
+  transform: scale(1.1);
 }
 
 #project-4:hover {
-  background-color: #3e6fbdde;
+  background-color: #5c9bffde;
   box-shadow: #00102b 0px 0px 50px;
-  filter: blur(0.7px);
+  filter: blur(3px);
+  transform: scale(1.1);
 }
 
 Footer {
@@ -446,5 +450,21 @@ Footer {
   }
   100% {
     transform: rotate(135deg);
+  }
+}
+
+
+@keyframes Reform-Title {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.7);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
