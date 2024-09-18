@@ -6,6 +6,13 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={require("./madrobin_logo_mrk5.png")} className="Logo" alt="logo"/>
+      <div id="links">
+          <a href={"https://github.com/MadRobin13"}><img src={require("./github.png")} alt="github logo"/></a>
+          <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")} alt="email me here button"/></a>
+          <a href={"https://www.linkedin.com/in/abhimanyu-chaudhary-778a6b329/"}><img src={require("./linkedin-app-white-icon.png")} alt="linkedin"/></a>
+          <a href={"https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"}><img src={require("./document-512.png")} alt="resume"/></a>
+          <a href={"https://www.printables.com/@mando13_1132886"}><img src={require("./printables_icon_white_v5.png")} id="printables" alt="printables logo"/></a>
+        </div>
       </header>
       <img alt="triangle" id="triangle" src={require("./glow_triangle_v3.png")}/>
       <div id="title-stuff">
@@ -45,16 +52,8 @@ function App() {
       </body>
 
       <footer className="App-footer"> 
-        <div id="links">
-          <a href={"https://github.com/MadRobin13"}><img src={require("./github.png")} alt="github logo"/></a>
-          <a href={"mailto:madrobin1340@gmail.com"}><img src={require("./at_symbol_mrk1.png")} alt="email me here button"/></a>
-          <a><img src={require("./linkedin-app-white-icon.png")} alt="linkedin"/></a>
-          <a href={"https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"}><img src={require("./document-512.png")} alt="resume"/></a>
-          <a href={"https://www.printables.com/@mando13_1132886"}><img src={require("./printables_icon_white_v5.png")} id="printables" alt="printables logo"/></a>
-        </div>
       </footer>
       <script>
-
       </script>
     </div>
   );
