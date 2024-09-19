@@ -231,7 +231,7 @@
   flex-direction: row;
   flex-wrap:wrap-reverse;
   justify-content: center;
-  gap: min(20px, 5vw);
+  gap: min(50px, 5vw);
   margin: min(30vw, 10px) auto;
   /* margin-top: 10vh; */
   animation: Move-line-left 3s;
@@ -274,7 +274,7 @@
 .project:hover{
   .project-buttons {
     /* width: 50%; */
-    height: 43%;
+    height: 35%;
     border: 3px solid white;
     border-radius: 10px;
     display: flex;
@@ -296,8 +296,8 @@
 
 .demo-visit-button {
   text-decoration: none;
-  margin: 10px;
-  margin-top: 15%;
+  margin: auto 10px;
+  /* margin-top: 15%; */
   height: 75px;
   padding: 5px;
   display: block;
@@ -310,9 +310,9 @@
   transition-property: background-color;
   p {
     margin: auto auto;
-    top: 50%;
+    /* top: 50%; */
     /* margin: 0 auto; */
-    padding: auto;
+    /* padding: auto; */
     transition-duration: 0.5s;
     transition-property: color;
   }
@@ -333,17 +333,21 @@
 }
 
 .github-visit-button {
-  margin: 10px;
-  height: 75%;
+  margin: auto 10px;
+  height: 62%;
+  width: auto;
   padding: 5px;
   border-radius: 10px;
   background-color: #21d3ffd2;
   transition-duration: 0.5s;
   transition-property: background-color;
   img {
-    margin: 0;
+    margin: auto;
     transition-duration: 0.5s;
     transition-property: filter;
+    min-width: 20px;
+    min-height: 20px;
+    width: 100px;
   }
 }
 

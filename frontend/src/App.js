@@ -19,7 +19,7 @@ function App() {
         <h1 className="title-settings hi">Hi I'm</h1>
         <h1 className="title-settings" id="name">Abhimanyu Chaudhary.</h1>
         <h2 className='title-settings about-me' id="line-2">I'm a full stack developer and </h2>
-        <h2 className='title-settings about-me' id="line-3"> I love robots and automation</h2>
+        <h2 className='title-settings about-me' id="line-3"> I love robots and automation!</h2>
       </div>
 
       <button className='Arrow'>{'>'}</button>
@@ -35,7 +35,7 @@ function App() {
               <p>A Web Based Chat Application developed </p>
               <p>using Go and React.js</p>
               <div className='project-buttons'>
-                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github.png")} alt="github logo"></img></a>
+                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='demo-visit-button' href={"https://go-and-react-website.vercel.app/"}><p>Visit</p></a>
               </div>
             </div>
@@ -45,7 +45,7 @@ function App() {
           <p>A Discord Bot that prevents the use of profanity in servers.</p> 
           <p>It was built using Javascript and MongoDB.</p>
             <div className='project-buttons'>
-              <a className='github-visit-button' href={"https://github.com/MadRobin13/Soap-the-Discord-Bot"}><img src={require("./github.png")} alt="github logo"></img></a>
+              <a className='github-visit-button' href={"https://github.com/MadRobin13/Soap-the-Discord-Bot"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
               <a className='demo-visit-button na-button'><p>N/A</p></a>
             </div>
           </div>
@@ -54,19 +54,19 @@ function App() {
             <p>An online pong game based on the bouncing DVD logo.</p>
             <p>This was built using Godot and GdScript.</p>
             <div className='project-buttons'>
-              <a className='github-visit-button' href={"https://github.com/MadRobin13/DVD-Pong"}><img src={require("./github.png")} alt="github logo"></img></a>
+              <a className='github-visit-button' href={"https://github.com/MadRobin13/DVD-Pong"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
               <a className='demo-visit-button' href={"https://dvd-logo-game.vercel.app/"}><p>Visit</p></a>
             </div>
           </div>
           <div className="project-group">
-            <img src={require("./chattr_example.png")} className='project-image' alt="chattr example"></img>
+            <img src={require("./artemis_pic.png")} className='project-image' alt="chattr example"></img>
             <div className="project" id="project-4">
               <h3><img src={require("./first_logo.png")} alt="chattr logo"/></h3>
               <p>I created all the Java code for my FRC team's <a href={"https://stemleycup.ca/"}>Stemley 2024</a> robot.</p>
               <p>My FRC team is <a href={"https://1360.ca/the-team/"}>1360 Orbit Robotics</a>.</p>
               <div className='project-buttons'>
-                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github.png")} alt="github logo"></img></a>
-                <a className='demo-visit-button' href={"https://go-and-react-website.vercel.app/"}><p>Visit</p></a>
+                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
+                <a className='demo-visit-button na-button' href={"https://go-and-react-website.vercel.app/"}><p>N/A</p></a>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ function App() {
               <p>A Web Based Chat Application developed </p>
               <p>using Go and React.js</p>
               <div className='project-buttons'>
-                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github.png")} alt="github logo"></img></a>
+                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='demo-visit-button' href={"https://go-and-react-website.vercel.app/"}><p>Visit</p></a>
               </div>
             </div>
