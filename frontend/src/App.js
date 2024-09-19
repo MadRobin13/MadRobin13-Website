@@ -22,23 +22,32 @@ function App() {
         <h2 className='title-settings about-me' id="line-3"> I love creating robots!</h2>
       </div>
 
-      <p className='Arrow'>{'>'}</p>
+      <button className='Arrow'>{'>'}</button>
       {/* <img src={require("./blue_minimal.png")} alt="sand" className="Sand"/> */}
 
       <body className="App-body">
         <div id="projects">
           <h2>Projects</h2>
-          <div className="project-group"></div>
-          <div className="project" id="project-1">
-            <div>
+          <div className="project-group">
+            <img src={require("./chattr_example.png")} className='project-image' alt="chattr example"></img>
+            <div className="project" id="project-1">
               <h3><img src={require("./chattr_logo_v5.png")} alt="chattr logo"/></h3>
-              <p>A Web Based Chat Application written </p>
+              <p>A Web Based Chat Application developed </p>
               <p>using Go and React.js</p>
+              <div className='project-buttons'>
+                <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github_logo_purple.png")} alt="purple github logo"></img></a>
+                <a className='demo-visit-button' href={"https://go-and-react-website.vercel.app/"}><p>Visit</p></a>
+              </div>
             </div>
           </div>
           <div className="project" id="project-2">
-            <h3>Project 2</h3>
-            <p>Project 2 Description</p>
+          <h3><img src={require("./Soap_logo_v2.png")} alt="soap logo"/></h3>
+          <p>A Discord Bot that prevents the use of profanity in servers.</p> 
+          <p>It was built using Javascript and MongoDB.</p>
+            <div className='project-buttons'>
+                <a className='github-visit-button' href={"https://github.com/MadRobin13/Soap-the-Discord-Bot"}><img src={require("./github_logo_purple.png")} alt="purple github logo"></img></a>
+                <a className='demo-visit-button na-button'><p>N/A</p></a>
+              </div>
           </div>
           <div className="project" id="project-3">
             <h3>Project 3</h3>
@@ -53,7 +62,13 @@ function App() {
 
       <footer className="App-footer"> 
       </footer>
-      <script>
+      <script src={"./methods.js"}>
+
+    import scrollFunction, topFunction from {'./methods.js'};
+
+      let mybutton = document.querySelector(".Arrow");
+
+      {/* window.onscroll = function() {scrollFunction(mybutton)}; */}
       </script>
     </div>
   );

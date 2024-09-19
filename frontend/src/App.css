@@ -96,7 +96,7 @@
   /* margin-top: 10vh; */
   flex-direction: row;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto 1vw auto;
   /* top: 0; */
   animation: Move-links 2s;
@@ -107,14 +107,15 @@
     padding: 5px;
     border: white 3px solid;
     border-radius: 10px;
-    transition: width 0.5s;
+    transition-property: border, width  ease-in-out;
+    transition-duration: 0.5s;
     /* transition: border 1s; */
   }
   img:hover {
     /* filter: invert(0.5);
      */
      width: 1.7vw;
-     border: none;
+     border: #ffffff00 3px solid;
     /* color: red; */
   }
 }
@@ -133,7 +134,7 @@
 }
 
 #triangle {
-  width: 60vw;
+  width: 1500px;
   height: auto;
   position: absolute;
   /* left: 0; 
@@ -153,7 +154,7 @@
   margin-top: 10vh;
   color: white;
   h2 {
-    font-size: 2vw;
+    font-size: 2.7vw;
     font-weight: 900;
     padding: 1vh;
     text-align: center;
@@ -198,59 +199,134 @@
   margin-top: 20px;
   font-size: 1.5vw;
   font-family: 'Courier New', Courier, monospace;
-  text-align: left;
+  /* text-align: left; */
   padding-left: 1vw;
+  animation: Move-line-left 3s;
+  transition-property: transform;
+  transition-duration: 1s;
   a {
     color: white;
     font-weight: 800;
   }
 }
 
-#project-1 {
-  animation: Move-line-left 3s;
-  transition: transform 1s;
+.project:hover {
+  background-color: #5c9bffde;
+  box-shadow: #00102b 0px 0px 50px;
+  /* filter: blur(3px); */
+  transform: scale(1.1);
 }
 
-#project-2 {
+.project-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1vh auto 1vh auto;
+  margin-top: 10vh;
   animation: Move-line-right 3s;
-  transition: transform 1s;
-}
-#project-3 {
-  animation: Move-line-left 3s;
-  transition: transform 1s;
+  position: relative;
+  width: 50vw;
 }
 
-#project-4 {
-  animation: Move-line-right 3s;
-  transition: transform 1s;
+.project-image {
+  /* width: 500px; */
+  display: block;
+  height: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
-#project-1:hover {
-  background-color: #5c9bffde;
-  box-shadow: #00102b 0px 0px 50px;
-  filter: blur(3px);
-  transform: scale(1.1);
+.project-buttons {
+  transition-duration: 1s;
+  transition-property: animation;
+  filter: blur(0px);
+  display: none;
+  z-index: 1;
 }
 
-#project-2:hover {
-  background-color: #5c9bffde;
-  box-shadow: #00102b 0px 0px 50px;
-  filter: blur(3px);
-  transform: scale(1.1);
+.project:hover{
+  .project-buttons {
+    /* width: 50%; */
+    height: 43%;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto auto;
+    filter: blur(0px) !important;
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    background-color: #001c508c;
+    animation: Move-visit-buttons 1s;
+    filter: blur(0px);
+    backdrop-filter: sepia(50%);
+    z-index: 9999999999999999999;
+  }
 }
 
-#project-3:hover {
-  background-color: #5c9bffde;
-  box-shadow: #00102b 0px 0px 50px;
-  filter: blur(3px);
-  transform: scale(1.1);
+.demo-visit-button {
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 15%;
+  height: 75px;
+  padding: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: #21d3ff8c;
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Concert One', cursive;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  p {
+    margin: auto auto;
+    top: 50%;
+    /* margin: 0 auto; */
+    padding: auto;
+    transition-duration: 0.5s;
+    transition-property: color;
+  }
 }
 
-#project-4:hover {
-  background-color: #5c9bffde;
-  box-shadow: #00102b 0px 0px 50px;
-  filter: blur(3px);
-  transform: scale(1.1);
+.demo-visit-button:hover {
+   background-color: white; /*0045bbbe */
+  p {
+    color: #21d3ff8c
+  }
+}
+.na-button:hover {
+  background-color: rgb(255, 103, 103);
+  p {
+    color: white;
+  }
+
+}
+
+.github-visit-button {
+  margin: 10px;
+  height: 75%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #21d3ff8c;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  img {
+    margin: 0;
+    transition-duration: 0.5s;
+    transition-property: filter;
+  }
+}
+
+.github-visit-button:hover {
+  background-color: white;
 }
 
 Footer {
@@ -288,7 +364,8 @@ Footer {
   top: clamp(150px, 18vh, 250px);
   left: -10vw;
   font-size: max(25px, 3.5vw);
-  transition: font-size 1s;
+  transition-property: font-size, color;
+  transition-duration: 1s;
 }
 
 #name:hover {
@@ -345,14 +422,23 @@ Footer {
 }
 
 .Arrow {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
   display:block;
   color: white;
+  background-color: #ffffff00;
   font-size: min(5rem, 50px);
   position: absolute;
   left: 0; 
   right: 0; 
   margin-inline: auto; 
-  top: max(76vh, 500px);
+  top: max(82vh, 500px);
   width: fit-content;
   /* margin: auto;Z */
   z-index: 1;
@@ -471,5 +557,14 @@ Footer {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes Move-visit-buttons {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0vh);
   }
 }
