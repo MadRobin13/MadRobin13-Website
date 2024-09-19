@@ -157,7 +157,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 10vh;
   color: white;
   h2 {
@@ -193,6 +193,7 @@
   border: #6b9fff8c 5px solid;
   border-radius: 10px;
   min-width: 400px;
+  max-width: 50vw;
   box-shadow: #00102b 0px 0px 50px;
   display: flex;
   flex-direction: column;
@@ -200,9 +201,10 @@
   justify-self: space-between;
   margin: 10px;
   position:relative;
+  left: 0;
   right: 0; 
   margin-inline: auto; 
-  /* width: fit-content; */
+  width: fit-content;
   padding: 1vh;
   margin-top: 20px;
   font-size: 1.5vw;
