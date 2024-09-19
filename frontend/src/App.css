@@ -202,15 +202,16 @@
   /* text-align: left; */
   padding-left: 1vw;
   animation: Move-line-left 3s;
-  transition-property: transform;
+  transition-property: transform, background-color, box-shadow;
   transition-duration: 1s;
+  z-index: 1;
   a {
     color: white;
     font-weight: 800;
   }
 }
 
-.project:hover {
+.project:hover{
   background-color: #5c9bffde;
   box-shadow: #00102b 0px 0px 50px;
   /* filter: blur(3px); */
@@ -222,7 +223,7 @@
   flex-direction: row;
   justify-content: center;
   margin: 1vh auto 1vh auto;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   animation: Move-line-right 3s;
   position: relative;
   width: 50vw;
@@ -256,7 +257,6 @@
     flex-direction: row;
     justify-content: center;
     margin: auto auto;
-    filter: blur(0px) !important;
     position: absolute;
     z-index: 2;
     top: 17%;
@@ -264,11 +264,8 @@
     right: 0;
     margin-inline: auto;
     width: fit-content;
-    background-color: #001c508c;
+    background-color: #001c50de;
     animation: Move-visit-buttons 1s;
-    filter: blur(0px);
-    backdrop-filter: sepia(50%);
-    z-index: 9999999999999999999;
   }
 }
 
@@ -280,7 +277,7 @@
   padding: 5px;
   display: block;
   border-radius: 10px;
-  background-color: #21d3ff8c;
+  background-color: #21d3ffd2;
   color: white;
   font-size: 1.5vw;
   font-family: 'Concert One', cursive;
@@ -299,7 +296,7 @@
 .demo-visit-button:hover {
    background-color: white; /*0045bbbe */
   p {
-    color: #21d3ff8c
+    color: #21d3ff
   }
 }
 .na-button:hover {
@@ -315,7 +312,7 @@
   height: 75%;
   padding: 5px;
   border-radius: 10px;
-  background-color: #21d3ff8c;
+  background-color: #21d3ffd2;
   transition-duration: 0.5s;
   transition-property: background-color;
   img {
