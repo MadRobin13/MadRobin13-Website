@@ -314,7 +314,7 @@
   text-decoration: none;
   margin: auto 10px;
   /* margin-top: 15%; */
-  height: 75px;
+  height: min(5.5vh, 75px);
   padding: 5px;
   display: block;
   border-radius: 10px;
