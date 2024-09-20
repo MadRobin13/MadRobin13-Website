@@ -140,7 +140,7 @@
 }
 
 #triangle {
-  width: max(1500px, 70vw);
+  width: max(900px, 70vw);
   height: auto;
   min-width: 638px;
   min-height: 334px;
@@ -200,7 +200,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-self: center;
-  margin: 10px auto;
+  margin: 10px auto; /*DSC02965.JPG*/
   /* position:relative; */
   /* left: 0;
   right: 0; 
@@ -247,7 +247,7 @@
   height: auto;
   display: block;
   /* height: 100%; */
-  margin: 10px 0;
+  margin: auto 0;
   padding: 10px;
   position: relative;
   border: #ffffff00 5px solid;
@@ -260,8 +260,20 @@
   }
 }
 
-.project-image:hover {
+#yt-link img{
+  display: block;
+  /* width: 100%; */
+  margin: auto;
+  top: 5vh;
+}
+
+#yt-link img:hover {
+  box-shadow: #00102b 0px 0px 50px;
+  transform: scale(1.1);
   border: 3px solid white;
+}
+
+.project-image:hover {
   box-shadow: #00102b 0px 0px 50px;
   transform: scale(1.1);
 }
@@ -284,7 +296,7 @@
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: center;
-    margin: auto auto;
+    margin: auto 10px;
     position: absolute;
     z-index: 2;
     top: 17%;
@@ -294,6 +306,7 @@
     width: fit-content;
     background-color: #001c50de;
     animation: Move-visit-buttons 1s;
+    min-height: 140px;
   }
 }
 
@@ -332,7 +345,6 @@
   p {
     color: white;
   }
-
 }
 
 .github-visit-button {
@@ -345,13 +357,21 @@
   transition-duration: 0.5s;
   transition-property: background-color;
   img {
-    margin: auto;
-    transition-duration: 0.5s;
-    transition-property: filter;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
     min-width: 20px;
     min-height: 20px;
-    width: 100px;
+    width: 90px;
   }
+}
+
+.weird-small-one {
+  height: 90px;
+}
+
+.short-one {
+  height: 35%;
 }
 
 .github-visit-button:hover {
