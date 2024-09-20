@@ -112,7 +112,7 @@
     background-color: #001c509f;
     transition-property: border, width, filter  ease-in-out;
     transition-duration: 0.5s;
-    filter: brightness(10);
+    filter: brightness(0) invert(1);
     /* transition: border 1s; */
   }
   img:hover {
