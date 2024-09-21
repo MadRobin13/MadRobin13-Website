@@ -45,8 +45,8 @@ function App() {
            <img src={require("./abc_pic.png")} className='project-image' alt="chattr example"></img>
             <div className="project" id="project-5">
               <h3 className='description'>Food-ABC2XYZ</h3>
-              <p className='description'>The world's first food thesaurus!</p>
-              <p className='description'>Built using HTML, CSS, Javascript, Python, and Flask.</p>
+              <p className='description'>The world's first AI-powered food thesaurus!</p>
+              <p className='description'>Built using HTML, CSS, Javascript, Python, Flask, and the OpenAI API.</p>
               <div className='project-buttons short-one'>
                 <a className='github-visit-button weird-small-one' href={"https://github.com/ozzyDev27/FoodABC2XYZ-Frontend"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='github-visit-button weird-small-one' href={"https://github.com/Ultra-bob/FoodABC2XYZ-Backend"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
