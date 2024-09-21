@@ -241,6 +241,10 @@
     transition-duration: 0.5s;
     transition-property: opacity;
   }
+  div > a {
+    transition-duration: 0.5s;
+    transition-property: background-color;
+  }
 }
 
 .project:hover{
@@ -370,13 +374,7 @@
 .demo-visit-button:hover {
    background-color: white; /*0045bbbe */
   p {
-    color: #21d3ff
-  }
-}
-.na-button:hover {
-  background-color: rgb(255, 103, 103);
-  p {
-    color: white;
+    color: #21d3ff;
   }
 }
 
@@ -399,16 +397,16 @@
   }
 }
 
+.github-visit-button:hover {
+  background-color: white;
+}
+
 .weird-small-one {
   height: 90px;
 }
 
 .short-one {
   height: 35%;
-}
-
-.github-visit-button:hover {
-  background-color: white;
 }
 
 #logo-first {
