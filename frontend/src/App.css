@@ -226,6 +226,18 @@
   a {
     color: white;
     font-weight: 800;
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  .description {
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: color;
+  }
+  h3 > img {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-property: opacity;
   }
 }
 
@@ -234,6 +246,15 @@
   box-shadow: #00102b 0px 0px 50px;
   /* filter: blur(3px); */
   transform: scale(1.1);
+  .description {
+    color: #ffffff00;
+  }
+  a {
+    color: #ffffff00;
+  }
+  h3 img {
+    opacity: 0;
+  }
 }
 
 .project-group {
@@ -306,10 +327,10 @@
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: center;
-    margin: auto 10px;
+    margin: auto;
     position: absolute;
     z-index: 2;
-    top: 17%;
+    top: 4vh;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -386,6 +407,10 @@
 
 .github-visit-button:hover {
   background-color: white;
+}
+
+#logo-first {
+  filter:contrast(1.3);
 }
 
 Footer {
@@ -621,7 +646,7 @@ Footer {
 
 @keyframes Move-visit-buttons {
   0% {
-    transform: translateY(100%);
+    transform: translateY(90%);
   }
   100% {
     transform: translateY(0vh);
