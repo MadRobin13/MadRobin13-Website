@@ -81,7 +81,9 @@
 }
 
 .App-header {
-  min-height: 6vh;
+  min-height: 30px;
+  max-height: 9vh;
+  height: 7%;
   display: block;
   padding: 1.2vh;
   color: white;
