@@ -46,7 +46,7 @@ function App() {
             <div className="project" id="project-5">
               <h3>Food-ABC2XYZ</h3>
               <p>The world's first food thesaurus!</p>
-              <p>Built using HTML, CSS, Javascript, Python, Flask.</p>
+              <p>Built using HTML, CSS, Javascript, Python, and Flask.</p>
               <div className='project-buttons short-one'>
                 <a className='github-visit-button weird-small-one' href={"https://github.com/ozzyDev27/FoodABC2XYZ-Frontend"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='github-visit-button weird-small-one' href={"https://github.com/Ultra-bob/FoodABC2XYZ-Backend"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
@@ -59,10 +59,12 @@ function App() {
             <img src={require("./DSC02965.JPG")} className='project-image' alt="chattr example"></img>
             <div className="project" id="project-4">
               <h3><img src={require("./first_logo.png")} alt="first logo"/></h3>
-              <p>I created all the Java code for my FRC team's <a href={"https://stemleycup.ca/"}>Stemley 2024</a> robot.</p>
+              <p>I developed code for my FRC team's 2023 and 2024 (this is the one shown) robots and I wrote all the code for our <a href={"https://stemleycup.ca/"}>Stemley 2024</a> robot.</p>
               <p>My FRC team is <a href={"https://1360.ca/the-team/"}>1360 Orbit Robotics</a>.</p>
               <div className='project-buttons'>
                 <a className='github-visit-button' href={"https://github.com/FRC1360/Offseason2024"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
+                <a className='github-visit-button' href={"https://github.com/FRC1360/Crescendo2024"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
+                <a className='github-visit-button' href={"https://github.com/FRC1360/ChargedUp2023"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='github-visit-button' href={"https://www.youtube.com/watch?v=Jphalv-HEQo"}><img src={require("./youtube_icon_v2.png")} alt="github logo"></img></a>
               </div>
             </div>
@@ -78,7 +80,7 @@ function App() {
           <div className="project" id="project-3">
             <h3><img src={require("./dvd_pong_logo_v2.png")} alt="dvd pong logo"></img></h3>
             <p>An online pong game based on the bouncing DVD logo.</p>
-            <p>This was built using Godot and GdScript.</p>
+            <p>This was built using Godot.</p>
             <div className='project-buttons'>
               <a className='github-visit-button' href={"https://github.com/MadRobin13/DVD-Pong"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
               <a className='demo-visit-button' href={"https://dvd-logo-game.vercel.app/"}><p>Visit</p></a>
