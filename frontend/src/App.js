@@ -64,7 +64,6 @@ function App() {
               <div className='project-buttons'>
                 <a className='github-visit-button' href={"https://github.com/FRC1360/Offseason2024"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='github-visit-button' href={"https://www.youtube.com/watch?v=Jphalv-HEQo"}><img src={require("./youtube_icon_v2.png")} alt="github logo"></img></a>
-                <a className='demo-visit-button na-button'><p>N/A</p></a>
               </div>
             </div>
           </div>
@@ -74,7 +73,6 @@ function App() {
           <p>It was built using Javascript and MongoDB.</p>
             <div className='project-buttons'>
               <a className='github-visit-button' href={"https://github.com/MadRobin13/Soap-the-Discord-Bot"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
-              <a className='demo-visit-button na-button'><p>N/A</p></a>
             </div>
           </div>
           <div className="project" id="project-3">

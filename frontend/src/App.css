@@ -92,12 +92,17 @@
 }
 
 #links{
-  position:relative;
+  position:absolute;
   display: flex;
   flex-wrap: wrap;
+  right: 0;
+  left: 0;
+  width: fit-content;
+  margin-inline: auto;
+  top: max(20px, 2vh);
   /* margin-top: 10vh; */
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   /* text-align: center; */
   margin: 0 auto 1vw auto;
   /* top: 0; */
@@ -159,23 +164,24 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 10vh;
+  margin-bottom: 10vh;
   color: white;
   h2 {
-    font-size: 2.7vw;
+    font-size: 3.5vw;
     font-weight: 900;
     padding: 1vh;
     text-align: center;
     font-family: "Fascinate inline", cursive;
   }
   h3 {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: 800;
     /* padding: 1vh; */
     text-align: center;
     font-family: "Fascinate inline", cursive;
   }
   h3 img {
-    height: 10vh;
+    height: 15vh;
     margin: 0;
     padding: 0;
   }
@@ -193,8 +199,9 @@
   background-color: #001c508c;
   border: #6b9fff8c 5px solid;
   border-radius: 10px;
+  max-height: 45vh;
   min-width: 400px;
-  max-width: 50vw;
+  max-width: 40vw;
   box-shadow: #00102b 0px 0px 50px;
   display: flex;
   flex-direction: column;
@@ -243,8 +250,9 @@
 }
 
 .project-image {
-  width: 500px;
-  height: auto;
+  /* width: 500px; */
+  height: 27vh;
+  width: auto;
   display: block;
   /* height: 100%; */
   margin: auto 0;
@@ -274,14 +282,16 @@
 }
 
 .project-image:hover {
-  box-shadow: #00102b 0px 0px 50px;
+  box-shadow: #000611 0px 0px 50px;
   transform: scale(1.1);
 }
 
 .project-buttons {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-property: animation;
   filter: blur(0px);
+  background-color: #ffffff00;
+  border: #ffffff00;
   display: none;
   z-index: 1;
 }
@@ -289,7 +299,7 @@
 .project:hover{
   .project-buttons {
     /* width: 50%; */
-    height: 35%;
+    height: min(35%, 90px);
     border: 3px solid white;
     border-radius: 10px;
     display: flex;
@@ -349,7 +359,7 @@
 
 .github-visit-button {
   margin: auto 10px;
-  height: 62%;
+  height: 90px;
   width: auto;
   padding: 5px;
   border-radius: 10px;
