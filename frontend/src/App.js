@@ -34,7 +34,7 @@ function App() {
             <div className="project" id="project-1">
               <h3><img src={require("./chattr_logo_v5.png")} alt="chattr logo"/></h3>
               <p className='description'>A Web Based Chat Application developed </p>
-              <p className='description'>using React.js, Go and MongoDB.</p>
+              <p className='description'>using React.js, Go, MongoDB, and Docker.</p>
               <div className='project-buttons'>
                 <a className='github-visit-button' href={"https://github.com/MadRobin13/Chattr"}><img src={require("./github_logo_purple.png")} alt="github logo"></img></a>
                 <a className='demo-visit-button' href={"https://go-and-react-website.vercel.app/"}><p>Visit</p></a>
