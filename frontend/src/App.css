@@ -201,7 +201,8 @@
   background-color: #001c508c;
   border: #6b9fff8c 5px solid;
   border-radius: 10px;
-  max-height: 45vh;
+  max-height: 47vh;
+  /* min-height: 44vh; */
   min-width: 400px;
   max-width: 40vw;
   box-shadow: #00102b 0px 0px 50px;
