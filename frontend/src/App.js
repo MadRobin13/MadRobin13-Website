@@ -387,6 +387,7 @@ function App() {
             className="scroll-indicator"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
+            onClick={() => scrollToSection('about')}
           >
             <ChevronDown size={24} />
           </motion.div>
