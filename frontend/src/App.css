@@ -412,6 +412,10 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -422,6 +426,8 @@ a {
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 400px;
 }
 
 .project-card:hover {
@@ -632,6 +638,7 @@ a {
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .contact-link {

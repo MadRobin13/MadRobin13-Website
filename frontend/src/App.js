@@ -431,9 +431,9 @@ function App() {
                 </p>
               </div>
               <div className="about-skills">
-                <h3>Technologies I Work With</h3>
+                <h3>Some Technologies I Work With</h3>
                 <div className="skills-grid">
-                  {['React', 'JavaScript', 'TypeScript', 'Python', 'Go', 'C++', 'Java', 'HTML/CSS', 'Node.js', 'MongoDB', 'Docker', 'Git', 'Arduino', 'Godot', 'TensorFlow', 'OpenCV', 'Discord.py', 'Framer Motion', 'Vercel', 'GitHub Actions', 'ESP32', 'Raspberry Pi', 'Linux', 'macOS', 'Windows'].map(skill => (
+                  {['React', 'JavaScript', 'TypeScript', 'Python', 'Go', 'C++', 'Java', 'HTML/CSS', 'Node.js', 'MongoDB', 'Docker', 'Git', 'Arduino', 'Godot', 'TensorFlow', 'OpenCV', 'Discord.py', 'Vercel', 'GitHub Actions', 'ESP32', 'Raspberry Pi', 'Linux', 'macOS', 'Windows'].map(skill => (
                     <div key={skill} className="skill-tag">{skill}</div>
                   ))}
                 </div>
