@@ -331,7 +331,7 @@ function App() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 I'm a 16-year-old full stack developer with a love for robotics and innovative solutions!
-                <br />Programming lead for <a href="https://1360.ca/"><strong>FRC team 1360</strong></a> • <a href="https://www.credly.com/badges/7dc8a2c8-3deb-4af7-b55c-ce09bcd9eb37/public_url"><strong>Certified in AI/ML</strong></a> by University of Toronto.
+                <br />Programming lead for <a href="https://1360.ca/"><strong>FRC team 1360</strong></a> • <a href="https://www.credly.com/badges/7dc8a2c8-3deb-4af7-b55c-ce09bcd9eb37/public_url"><strong>Certified in AI/ML</strong></a> by the University of Toronto.
               </motion.p>
               <motion.div
                 className="hero-cta"
@@ -582,7 +582,9 @@ function App() {
                 whileHover={{ scale: 1.02, y: -4 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Mail size={32} />
+                <div className="icon">
+                  <Mail size={32} />
+                </div>
                 <div>
                   <h3>Email</h3>
                   <p>madrobin1340@gmail.com</p>
@@ -596,7 +598,9 @@ function App() {
                 whileHover={{ scale: 1.02, y: -4 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Linkedin size={32} />
+                <div className="icon">
+                  <Linkedin size={32} />
+                </div>
                 <div>
                   <h3>LinkedIn</h3>
                   <p>Connect with me</p>
@@ -610,7 +614,9 @@ function App() {
                 whileHover={{ scale: 1.02, y: -4 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Github size={32} />
+                <div className="icon">
+                  <Github size={32} />
+                </div>
                 <div>
                   <h3>GitHub</h3>
                   <p>Check out my code</p>
