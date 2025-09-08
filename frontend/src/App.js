@@ -330,9 +330,8 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                I build innovative web applications and AI-powered solutions. 
-                Currently pursuing Computer Science with a passion for creating 
-                technology that makes a difference.
+                I'm a 16-year-old full stack developer with a love for robotics and innovative solutions!
+                <br />Programming lead for <a href="https://1360.ca/"><strong>FRC team 1360</strong></a> • <a href="https://www.credly.com/badges/7dc8a2c8-3deb-4af7-b55c-ce09bcd9eb37/public_url"><strong>Certified in AI/ML</strong></a> by University of Toronto.
               </motion.p>
               <motion.div
                 className="hero-cta"
