@@ -254,7 +254,7 @@ function App() {
               <Mail size={20} />
             </motion.a>
             <motion.a 
-              href="https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing" 
+              href="https://docs.google.com/document/d/1_h1T9D0aft4EyQd_3O6dojTqgUX0L4NWM2ZQVGFuRtM/edit?usp=sharing" 
               whileHover={{ scale: 1.1 }} 
               whileTap={{ scale: 0.9 }}
             >
@@ -298,7 +298,7 @@ function App() {
               <a href="https://github.com/MadRobin13"><Github size={20} /></a>
               <a href="https://www.linkedin.com/in/abhimanyu-chaudhary-778a6b329/"><Linkedin size={20} /></a>
               <a href="mailto:madrobin1340@gmail.com"><Mail size={20} /></a>
-              <a href="https://drive.google.com/file/d/1fbJkTsMaUDS1q9sAKar44hsqukhJULHD/view?usp=sharing"><FileText size={20} /></a>
+              <a href="https://docs.google.com/document/d/1_h1T9D0aft4EyQd_3O6dojTqgUX0L4NWM2ZQVGFuRtM/edit?usp=sharing"><FileText size={20} /></a>
               <a href="https://devpost.com/MadRobin13?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><Trophy size={20} /></a>
             </div>
           </motion.div>
